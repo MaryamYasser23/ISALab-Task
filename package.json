@@ -1,0 +1,15 @@
+{
+  "name": "maryam-iwh-practicum",
+  "version": "1.0.0",
+  "description": "Integrating With HubSpot I Practicum - Maryam",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "pug": "^3.0.3"
+  }
+}

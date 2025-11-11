@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title= title
+    link(rel="stylesheet" href="/public/css/style.css")
+  body
+    h1= title
+    if error
+      p(style="color:red") #{error}
+    a(href="/update-cobj") Add to this table
+    br
+    br
+    table
+      thead
+        tr
+          th Name
+          th Description
+      tbody
+        if items.length === 0
+          tr
+            td(colspan="3") No records found.
+        else
+          each item in items
+            tr
+              td= item.properties.name
+              td= item.properties.description
+    footer
+      p Small practicum demo
